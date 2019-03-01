@@ -1,16 +1,5 @@
 """Generation of LaTeX tables for the paper and CDFs for the C code.
 
-Based on the paper:
-    Joppe Bos, Craig Costello, Leo Ducas, Ilya Mironov, Michael Naehrig, Valeria
-    Nikolaenko, Ananth Raghunathan, Douglas Stebila.  Frodo: Take off the ring!
-    Practical, quantum-secure key exchange from LWE.  In ACM Conference on Computer
-    and Communications Security (CCS) 2016, ACM, October, 2016.
-    DOI: http://dx.doi.org/10.1145/2976749.2978425
-    Eprint http://eprint.iacr.org/2016/659
-
-Copyright (c) 2016 Joppe Bos, Leo Ducas, Ilya Mironov, Valeria Nikolaenko,
-                   Ananth Raghunathan, Douglas Stebila
-
 Released under the MIT License; see LICENSE.txt for details.
 """
 from math import sqrt, log, ceil
@@ -139,8 +128,8 @@ def main():
        {'name': 'challenge', 'D': 'D_1', 'sigma': sqrt(1.10), 'n': 334, 'q': 10, 'g': 2**9, 'B': 1, 'bits': 8, 'base': 85, 'cut': 0},
        {'name': 'classical', 'D': 'D_2', 'sigma': sqrt(0.90), 'n': 554, 'q': 11, 'g': 2**9, 'B': 2, 'bits': 12,'base': 137,'cut': 0},
        {'name': 'recommend', 'D': 'D_3', 'sigma': sqrt(1.66), 'n': 718, 'q': 14, 'g': 2**10,'B': 4, 'bits': 12,'base': 140,'cut': 0},
-       {'name': 'paranoid' , 'D': 'D_4', 'sigma': sqrt(1.66), 'n': 818, 'q': 14, 'g': 2**10,'B': 4, 'bits': 16,'base': 129,'cut': 0},
-
+ #      {'name': 'paranoid' , 'D': 'D_4', 'sigma': sqrt(1.66), 'n': 818, 'q': 14, 'g': 2**10,'B': 4, 'bits': 16,'base': 129,'cut': 0},
+       {'name': 'paranoid' , 'D': 'D_4', 'sigma': sqrt(1.7), 'n': 818, 'q': 14, 'g': 2**10,'B': 4, 'bits': 16,'base': 129,'cut': 0},
        {'name': 'challenge', 'D': 'D_1', 'sigma': sqrt(1.25), 'n': 352, 'q': 11, 'g': 2**2, 'B': 1, 'bits': 8, 'base': 85, 'cut': 0},
        {'name': 'classical', 'D': 'D_2', 'sigma': sqrt(1.00), 'n': 592, 'q': 12, 'g': 2**2, 'B': 2, 'bits': 12,'base': 138,'cut': 0},
        {'name': 'recommend', 'D': 'D_3', 'sigma': sqrt(1.75), 'n': 752, 'q': 15, 'g': 2**3, 'B': 4, 'bits': 12,'base': 137,'cut': 0},

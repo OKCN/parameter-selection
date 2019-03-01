@@ -220,7 +220,8 @@ bandwidth = lambda p, q, n, l, g: (ceil(log(p, 2))*n*l*2 + ceil(log(g, 2)*l*l)) 
 
 
 def main():
-    parameters = [ {'q': 2**15, 'p': 2**12, 'n': 672, 'samples': 672*8*2+64, 's_s': sqrt(2.0)},
+    #parameters = [ {'q': 2**15, 'p': 2**12, 'n': 672, 'samples': 672*8*2+64, 's_s': sqrt(2.0)},
+    parameters = [ {'q': 2**15, 'p': 2**12, 'n': 680, 'samples': 680*8*2+64, 's_s': sqrt(1.7)},
                    {'q': 2**15, 'p': 2**12, 'n': 832, 'samples': 832*8*2+64, 's_s': sqrt(1.4)} ]
 
     for param in parameters:

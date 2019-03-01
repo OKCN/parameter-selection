@@ -1,7 +1,7 @@
+#include <cstdio>
 #include <cmath>
 #include <cstring>
 #include <algorithm>
-#include <cstdio>
 
 const int maxq = 1<<16;
 
@@ -191,6 +191,7 @@ double failure_rate_simple(int q, int p, int n, int m, int g, int reclen, double
     return failure_pr;
 }
 
+
 double bandwidth(int n, int q, int p, int g, int l) {
     return (2*(int)(ceil(log2(p)))*n*l + l*l*(int)(ceil(log2(g))))*1./8000.;
 }
@@ -249,8 +250,8 @@ void LWR_AKCN_paranoid_simple()
 }
 
 int main() {
-    LWR_recommended();
-    LWR_paranoid();
+    //LWR_recommended();
+    //LWR_paranoid();
 
     LWR_AKCN_recommended_simple();
     LWR_AKCN_paranoid_simple();
